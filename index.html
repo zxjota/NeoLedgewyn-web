@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - MyTeaReverie</title>
+    <title>Privacy Policy - NeoLedgewyn</title>
     <style>
         :root {
-            --primary-color: #2d5c3d;
-            --secondary-color: #8ba888;
-            --accent-color: #d4e8d9;
+            --primary-color: #1a5276;
+            --secondary-color: #3498db;
+            --accent-color: #d6eaf8;
             --text-color: #333;
             --light-text: #666;
-            --background-color: #f9f9f7;
+            --background-color: #f8f9fa;
             --card-bg: #ffffff;
             --border-color: #e0e0e0;
         }
@@ -181,8 +181,8 @@
     <header>
         <div class="container">
             <div class="logo">
-                <span class="logo-icon">🍃</span>
-                <span>MyTeaReverie</span>
+                <span class="logo-icon">⚡</span>
+                <span>NeoLedgewyn</span>
             </div>
             <h1>Privacy Policy</h1>
             <p>Your privacy is important to us. This policy explains how we collect, use, and protect your information.</p>
@@ -191,10 +191,10 @@
     
     <div class="container">
         <div class="content">
-            <div class="last-updated">Last Updated: October 26, 2023</div>
+            <div class="last-updated">Last Updated: March 15, 2024</div>
             
             <h2>Introduction</h2>
-            <p>Welcome to MyTeaReverie ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our MyTeaReverie mobile application (the "App").</p>
+            <p>Welcome to NeoLedgewyn ("we," "our," or "us"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our NeoLedgewyn application (the "App").</p>
             
             <p>By using the App, you agree to the collection and use of information in accordance with this policy. If you do not agree with the terms of this Privacy Policy, please do not access the App.</p>
             
@@ -205,8 +205,8 @@
             <ul>
                 <li>Account information (username, email address)</li>
                 <li>Profile information you choose to share</li>
-                <li>Tea preferences and tasting notes</li>
-                <li>Brewing parameters and recipes you create</li>
+                <li>Application preferences and settings</li>
+                <li>User-generated content and data</li>
             </ul>
             
             <h3>Automatically Collected Information</h3>
@@ -215,17 +215,19 @@
                 <li>Device information (model, operating system, unique device identifiers)</li>
                 <li>Usage data (features you use, time spent in the App)</li>
                 <li>App performance data (crash reports, performance metrics)</li>
+                <li>Interaction patterns and behavior analytics</li>
             </ul>
             
             <h2>How We Use Your Information</h2>
             <p>We use the information we collect for various purposes, including to:</p>
             <ul>
                 <li>Provide, maintain, and improve the App's functionality</li>
-                <li>Personalize your tea brewing experience</li>
+                <li>Personalize your application experience</li>
                 <li>Develop new features and services</li>
                 <li>Communicate with you about updates, security alerts, and support messages</li>
                 <li>Monitor and analyze usage patterns and trends</li>
                 <li>Prevent fraudulent activities and ensure security</li>
+                <li>Optimize application performance and user experience</li>
             </ul>
             
             <h2>Information Sharing and Disclosure</h2>
@@ -238,7 +240,7 @@
             </ul>
             
             <h2>Data Security</h2>
-            <p>We implement appropriate technical and organizational security measures designed to protect the security of your personal information. However, please note that no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+            <p>We implement appropriate technical and organizational security measures designed to protect the security of your personal information. We use industry-standard encryption protocols for data transmission and storage. However, please note that no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
             
             <h2>Your Data Rights</h2>
             <p>Depending on your location, you may have the following rights regarding your personal information:</p>
@@ -264,14 +266,16 @@
                 <h3>Contact Us</h3>
                 <p>If you have any questions about this Privacy Policy or our data practices, please contact us at:</p>
                 <p><strong>Email:</strong> finastratechnologies@gmail.com</p>
-                <p><strong>App Name:</strong> MyTeaReverie</p>
+                <p><strong>App Name:</strong> NeoLedgewyn</p>
+                <p>We typically respond to inquiries within 1-2 business days.</p>
             </div>
         </div>
     </div>
     
     <footer>
         <div class="container">
-            <p>&copy; 2023 MyTeaReverie. All rights reserved.</p>
+            <p>&copy; 2024 NeoLedgewyn. All rights reserved.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">This Privacy Policy is effective as of March 15, 2024.</p>
         </div>
     </footer>
     
@@ -294,6 +298,25 @@
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
             });
         });
     </script>
